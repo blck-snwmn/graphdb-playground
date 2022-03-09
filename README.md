@@ -28,7 +28,7 @@ MATCH (n) RETURN n;
 MATCH (a:User{name:"AA"}) RETURN a;
 MATCH (a:User{name:"AA"})-[r]->(b) RETURN a, r, b;
 MATCH (a:User{name:"AA"})-[r:Cracker]->(b) RETURN a, sum(r.count), b;
-``
+```
 
 削除
 ```
